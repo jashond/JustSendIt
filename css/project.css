@@ -1,0 +1,168 @@
+
+/* font-family */
+
+.heroText,
+.heroH1,
+ h2{
+  font-family: 'Rubik', sans-serif;
+}
+
+/* NavBar */
+.navBg{
+  padding: 10px;
+  color: black;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+/* HeroImage */
+body, html {
+    height: 100%;
+}
+
+.heroImage{
+  background-image: linear-gradient(to right, rgba(0, 51, 102, 0.5), rgba(0, 0, 0, 0.0)), url(../img/snowboardJumping.jpg);
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  margin-bottom: 0px;
+}
+
+.heroAlign {
+  text-align: left;
+  position: absolute;
+  top: 45%;
+  left: 10%;
+}
+
+.heroText,
+.heroH1{
+  color: white;
+}
+
+.heroText{
+  font-size: 1em;
+}
+
+.heroH1{
+  font-size:3em;
+}
+
+.slideshowTitle{
+  margin-top: 100px;
+  margin-bottom: 35px
+}
+
+/*SlideShow */
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-wrapper {
+  max-width: 800px;
+  position: relative;
+  margin: auto;
+}
+
+.backgroudSlide{
+  background-image: radial-gradient(rgb(199, 231, 234, .60), rgb(71, 78, 79, .60));
+  padding-top: 20px;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 3s;
+  animation-name: fade;
+  animation-duration: 3s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+/*SlideShow */
+
+/* Card Styles */
+.cardShadow{
+  box-shadow: 5px 5px 10px 1px #303233;
+}
+
+.cardBackground{
+  background-image: linear-gradient(to bottom right, rgb(133, 143, 145, .60), rgb(68, 84, 89, .1));
+  border-top-right-radius: 25%;
+  border-bottom-left-radius: 15%;
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+
+
+
+
+/* Media Query */
+@media (max-width: 800px) {
+  .cardBackground {
+    background-color: rgb(133, 143, 145, .60);
+    border-top-right-radius: 0%;
+    border-bottom-left-radius: 0%;
+    padding-top: 30px;
+    padding-bottom: 50px;
+
+  }
+}
